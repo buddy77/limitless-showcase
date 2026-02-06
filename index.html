@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitless — Landing Page Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==================== DIRECTORY SCREEN ==================== -->
+    <div id="directory" class="screen active">
+        <div class="directory-bg"></div>
+        <nav class="dir-nav">
+            <div class="dir-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                        <path d="M10 16 L16 10 L22 16 L16 22Z" fill="url(#logoGrad)" opacity="0.8"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#6C63FF"/>
+                                <stop offset="100%" stop-color="#00D4FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">LIMITLESS</span>
+            </div>
+            <div class="dir-badge">Design Directory</div>
+        </nav>
+
+        <div class="dir-content">
+            <div class="dir-header">
+                <p class="dir-label">INTERNAL REVIEW</p>
+                <h1 class="dir-title">Landing Page<br><span class="gradient-text">Options</span></h1>
+                <p class="dir-subtitle">Browse and preview landing page designs for Limitless. Select a concept to view the full page.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card" onclick="showPage('page1')">
+                    <div class="card-preview card-preview-1">
+                        <div class="card-preview-inner">
+                            <div class="preview-nav-bar"></div>
+                            <div class="preview-hero-1">
+                                <div class="preview-badge-small"></div>
+                                <div class="preview-heading-large"></div>
+                                <div class="preview-heading-med"></div>
+                                <div class="preview-cta-btn"></div>
+                            </div>
+                            <div class="preview-cards-row">
+                                <div class="preview-card-sm"></div>
+                                <div class="preview-card-sm"></div>
+                                <div class="preview-card-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-tag">Concept A</div>
+                        <h3 class="card-title">Bold Conversion</h3>
+                        <p class="card-desc">ClickFunnels-inspired bold hero with high-contrast CTAs, trust signals, and conversion-focused layout.</p>
+                        <div class="card-meta">
+                            <span class="card-style">Bold • Energetic • Direct</span>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" onclick="showPage('page2')">
+                    <div class="card-preview card-preview-2">
+                        <div class="card-preview-inner">
+                            <div class="preview-nav-bar dark"></div>
+                            <div class="preview-hero-2">
+                                <div class="preview-orb"></div>
+                                <div class="preview-heading-large light"></div>
+                                <div class="preview-heading-med light"></div>
+                            </div>
+                            <div class="preview-features-grid">
+                                <div class="preview-feature-box"></div>
+                                <div class="preview-feature-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-tag">Concept B</div>
+                        <h3 class="card-title">Futuristic Dark</h3>
+                        <p class="card-desc">Immersive dark theme with glowing accents, ambient gradients, and cinematic storytelling flow.</p>
+                        <div class="card-meta">
+                            <span class="card-style">Premium • Futuristic • Immersive</span>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" onclick="showPage('page3')">
+                    <div class="card-preview card-preview-3">
+                        <div class="card-preview-inner">
+                            <div class="preview-nav-bar light-nav"></div>
+                            <div class="preview-hero-3">
+                                <div class="preview-heading-xl"></div>
+                                <div class="preview-text-line"></div>
+                                <div class="preview-text-line short"></div>
+                                <div class="preview-cta-outline"></div>
+                            </div>
+                            <div class="preview-split-row">
+                                <div class="preview-split-left"></div>
+                                <div class="preview-split-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-tag">Concept C</div>
+                        <h3 class="card-title">Clean Editorial</h3>
+                        <p class="card-desc">Minimalist editorial design with oversized typography, generous whitespace, and sophisticated restraint.</p>
+                        <div class="card-meta">
+                            <span class="card-style">Minimal • Elegant • Thoughtful</span>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="dir-footer">
+            <p>Limitless Design Review — For Internal Use Only</p>
+        </footer>
+    </div>
+
+    <!-- ==================== LANDING PAGE 1: BOLD CONVERSION ==================== -->
+    <div id="page1" class="screen">
+        <button class="back-btn" onclick="showPage('directory')">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Back to Directory
+        </button>
+
+        <nav class="p1-nav">
+            <div class="p1-logo">LIMITLESS</div>
+            <div class="p1-nav-links">
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Testimonials</a>
+            </div>
+            <a href="#" class="p1-nav-cta">Get Started →</a>
+        </nav>
+
+        <!-- Hero -->
+        <section class="p1-hero">
+            <div class="p1-hero-bg"></div>
+            <div class="p1-hero-content">
+                <div class="p1-badge">🚀 AI Made Simple. Life Made Limitless.</div>
+                <h1 class="p1-hero-title">Stop Overthinking AI.<br><span>Start Living Limitless.</span></h1>
+                <p class="p1-hero-sub">We break down the complexity of artificial intelligence into simple, actionable breakthroughs that help you become a high-agency person — someone who bends reality to their will.</p>
+                <div class="p1-hero-ctas">
+                    <a href="#" class="p1-btn-primary">Start Your Breakthrough →</a>
+                    <a href="#" class="p1-btn-secondary">Watch the Story ▶</a>
+                </div>
+                <div class="p1-trust-row">
+                    <div class="p1-trust-avatars">
+                        <div class="avatar a1"></div>
+                        <div class="avatar a2"></div>
+                        <div class="avatar a3"></div>
+                        <div class="avatar a4"></div>
+                        <div class="avatar a5"></div>
+                    </div>
+                    <span>Joined by <strong>12,000+</strong> high-agency individuals</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos -->
+        <section class="p1-logos">
+            <p class="p1-logos-label">TRUSTED BY FORWARD-THINKERS AT</p>
+            <div class="p1-logos-row">
+                <span>Google</span><span>Tesla</span><span>OpenAI</span><span>Stripe</span><span>Meta</span><span>Apple</span>
+            </div>
+        </section>
+
+        <!-- Problem/Solution -->
+        <section class="p1-problem">
+            <div class="p1-problem-grid">
+                <div class="p1-problem-left">
+                    <p class="section-label">THE PROBLEM</p>
+                    <h2>AI is everywhere.<br>Clarity is nowhere.</h2>
+                    <p>Everyone's talking about AI. Nobody's making it simple. You're drowning in tools, tutorials, and hype — but you still don't know how to use AI to actually change your life.</p>
+                </div>
+                <div class="p1-problem-right">
+                    <p class="section-label">THE SOLUTION</p>
+                    <h2>Limitless makes AI<br>your unfair advantage.</h2>
+                    <p>We cut through the noise. Simple frameworks. Real breakthroughs. A community of high-agency people who refuse to accept limits. This is where clarity meets action.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="p1-features">
+            <div class="p1-features-header">
+                <p class="section-label">WHAT YOU GET</p>
+                <h2>Three pillars of<br>limitless living</h2>
+            </div>
+            <div class="p1-features-grid">
+                <div class="p1-feature-card">
+                    <div class="p1-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/><path d="M9 14L12 17L19 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>AI Simplified</h3>
+                    <p>No jargon. No overwhelm. Just clear, step-by-step frameworks that make AI your everyday superpower — even if you're starting from zero.</p>
+                </div>
+                <div class="p1-feature-card">
+                    <div class="p1-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="2"/><path d="M14 8V14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Breakthrough Thinking</h3>
+                    <p>Learn the mental models and strategies used by the world's highest performers. Break through invisible ceilings and rewrite your operating system.</p>
+                </div>
+                <div class="p1-feature-card">
+                    <div class="p1-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 2L17.5 9.5L26 10.5L20 16.5L21.5 25L14 21L6.5 25L8 16.5L2 10.5L10.5 9.5L14 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>High-Agency Community</h3>
+                    <p>Surround yourself with people who refuse to be average. A curated community of doers, builders, and breakthrough seekers who push each other forward.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="p1-testimonial">
+            <div class="p1-testimonial-inner">
+                <div class="p1-quote-mark">"</div>
+                <blockquote>Limitless didn't just teach me AI — it rewired how I think. I went from overwhelmed by technology to building automated systems that save me 20 hours a week. This is what being high-agency actually feels like.</blockquote>
+                <div class="p1-quote-author">
+                    <div class="avatar a1"></div>
+                    <div>
+                        <strong>Sarah Chen</strong>
+                        <span>Founder, NexusOps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="p1-final-cta">
+            <div class="p1-cta-bg"></div>
+            <div class="p1-cta-content">
+                <h2>Your breakthrough<br>starts today.</h2>
+                <p>Join thousands of high-agency individuals who are using AI to live without limits. No fluff. No hype. Just results.</p>
+                <a href="#" class="p1-btn-primary large">Become Limitless →</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p1-footer">
+            <div class="p1-footer-inner">
+                <div class="p1-footer-brand">
+                    <span class="p1-logo">LIMITLESS</span>
+                    <p>Making AI simple. Making life limitless.</p>
+                </div>
+                <div class="p1-footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ==================== LANDING PAGE 2: FUTURISTIC DARK ==================== -->
+    <div id="page2" class="screen">
+        <button class="back-btn light-back" onclick="showPage('directory')">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Back to Directory
+        </button>
+
+        <div class="p2-wrapper">
+            <nav class="p2-nav">
+                <div class="p2-logo">LIMITLESS</div>
+                <div class="p2-nav-links">
+                    <a href="#">Vision</a>
+                    <a href="#">Method</a>
+                    <a href="#">Community</a>
+                </div>
+                <a href="#" class="p2-nav-cta">Enter the Future</a>
+            </nav>
+
+            <!-- Hero -->
+            <section class="p2-hero">
+                <div class="p2-orb orb-1"></div>
+                <div class="p2-orb orb-2"></div>
+                <div class="p2-orb orb-3"></div>
+                <div class="p2-hero-content">
+                    <div class="p2-badge">THE FUTURE IS SIMPLE</div>
+                    <h1 class="p2-hero-title">
+                        <span class="p2-title-line">The age of AI</span>
+                        <span class="p2-title-line accent">belongs to the</span>
+                        <span class="p2-title-line glow">limitless.</span>
+                    </h1>
+                    <p class="p2-hero-sub">You don't need to be a technologist to harness AI. You need to be a high-agency human. We show you how — simply, clearly, powerfully.</p>
+                    <div class="p2-hero-ctas">
+                        <a href="#" class="p2-btn-glow">Begin Your Ascent →</a>
+                        <a href="#" class="p2-btn-ghost">Explore the Vision</a>
+                    </div>
+                </div>
+                <div class="p2-hero-visual">
+                    <div class="p2-infinity">
+                        <div class="infinity-ring ring-1"></div>
+                        <div class="infinity-ring ring-2"></div>
+                        <div class="infinity-ring ring-3"></div>
+                        <div class="infinity-core"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Manifesto -->
+            <section class="p2-manifesto">
+                <div class="p2-manifesto-content">
+                    <p class="section-label light">THE MANIFESTO</p>
+                    <h2 class="p2-manifesto-text">
+                        We believe that <em>every person</em> has the capacity for extraordinary breakthroughs. That AI isn't just a tool — it's an <em>amplifier</em> of human potential. That the gap between who you are and who you could be is <em>one breakthrough</em> away.
+                    </h2>
+                </div>
+            </section>
+
+            <!-- Pillars -->
+            <section class="p2-pillars">
+                <p class="section-label light center">THE THREE PATHS</p>
+                <h2 class="p2-section-title">How we unlock<br>the limitless.</h2>
+                <div class="p2-pillars-grid">
+                    <div class="p2-pillar">
+                        <div class="p2-pillar-number">01</div>
+                        <div class="p2-pillar-line"></div>
+                        <h3>Decode</h3>
+                        <p>We strip AI down to its essence. No complexity. No gatekeeping. Just clear understanding that transforms confusion into confidence.</p>
+                    </div>
+                    <div class="p2-pillar">
+                        <div class="p2-pillar-number">02</div>
+                        <div class="p2-pillar-line"></div>
+                        <h3>Elevate</h3>
+                        <p>Breakthrough frameworks for high-agency living. Mental models, daily practices, and strategic thinking patterns used by peak performers.</p>
+                    </div>
+                    <div class="p2-pillar">
+                        <div class="p2-pillar-number">03</div>
+                        <div class="p2-pillar-line"></div>
+                        <h3>Amplify</h3>
+                        <p>Connect with a community of people who refuse ordinary. Share breakthroughs, accelerate growth, and compound your transformation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <section class="p2-stats">
+                <div class="p2-stats-grid">
+                    <div class="p2-stat">
+                        <div class="p2-stat-number">12K+</div>
+                        <div class="p2-stat-label">High-agency members</div>
+                    </div>
+                    <div class="p2-stat">
+                        <div class="p2-stat-number">94%</div>
+                        <div class="p2-stat-label">Report breakthroughs in 30 days</div>
+                    </div>
+                    <div class="p2-stat">
+                        <div class="p2-stat-number">50+</div>
+                        <div class="p2-stat-label">AI frameworks simplified</div>
+                    </div>
+                    <div class="p2-stat">
+                        <div class="p2-stat-number">∞</div>
+                        <div class="p2-stat-label">Potential unlocked</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="p2-testimonials">
+                <p class="section-label light center">VOICES</p>
+                <h2 class="p2-section-title">From the community.</h2>
+                <div class="p2-testimonials-grid">
+                    <div class="p2-test-card">
+                        <p>"I was terrified of AI replacing me. Now I'm using it to 10x my creative output. Limitless changed my entire perspective."</p>
+                        <div class="p2-test-author">
+                            <strong>Marcus Rivera</strong>
+                            <span>Creative Director</span>
+                        </div>
+                    </div>
+                    <div class="p2-test-card">
+                        <p>"The breakthrough frameworks alone are worth it. But combined with the community? It's like rocket fuel for personal growth."</p>
+                        <div class="p2-test-author">
+                            <strong>Aisha Patel</strong>
+                            <span>Startup Founder</span>
+                        </div>
+                    </div>
+                    <div class="p2-test-card">
+                        <p>"Finally, someone who explains AI without making me feel stupid. This is what the world needs — simplicity with depth."</p>
+                        <div class="p2-test-author">
+                            <strong>James Thornton</strong>
+                            <span>Executive Coach</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <section class="p2-final-cta">
+                <div class="p2-cta-orb"></div>
+                <h2>The only limit<br>is the one you accept.</h2>
+                <p>Step into the future. Master AI. Achieve breakthroughs. Become the person you were meant to be.</p>
+                <a href="#" class="p2-btn-glow large">Become Limitless →</a>
+            </section>
+
+            <!-- Footer -->
+            <footer class="p2-footer">
+                <div class="p2-footer-inner">
+                    <span class="p2-logo">LIMITLESS</span>
+                    <div class="p2-footer-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ==================== LANDING PAGE 3: CLEAN EDITORIAL ==================== -->
+    <div id="page3" class="screen">
+        <button class="back-btn" onclick="showPage('directory')">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Back to Directory
+        </button>
+
+        <nav class="p3-nav">
+            <div class="p3-logo">Limitless</div>
+            <div class="p3-nav-links">
+                <a href="#">Philosophy</a>
+                <a href="#">Approach</a>
+                <a href="#">Join</a>
+            </div>
+            <a href="#" class="p3-nav-cta">Get Started</a>
+        </nav>
+
+        <!-- Hero -->
+        <section class="p3-hero">
+            <div class="p3-hero-content">
+                <h1 class="p3-hero-title">
+                    Make AI<br>
+                    <span class="p3-serif">simple.</span><br>
+                    Make life<br>
+                    <span class="p3-serif">limitless.</span>
+                </h1>
+                <div class="p3-hero-right">
+                    <p class="p3-hero-sub">We believe the most powerful technology should be the most accessible. Limitless exists at the intersection of AI simplicity and human breakthrough — helping high-agency people amplify what makes them extraordinary.</p>
+                    <a href="#" class="p3-btn-underline">Begin your journey →</a>
+                </div>
+            </div>
+            <div class="p3-hero-divider"></div>
+        </section>
+
+        <!-- Belief -->
+        <section class="p3-belief">
+            <div class="p3-belief-content">
+                <div class="p3-belief-left">
+                    <p class="section-label">WHAT WE BELIEVE</p>
+                </div>
+                <div class="p3-belief-right">
+                    <h2>The world is splitting into two groups: those who harness AI, and those left behind. We're building a bridge — not with complexity, but with clarity.</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Columns -->
+        <section class="p3-columns">
+            <div class="p3-col">
+                <div class="p3-col-number">01</div>
+                <h3>AI, Simplified</h3>
+                <p>We take the world's most transformative technology and make it feel intuitive. Clear frameworks. Practical applications. No prerequisites. Whether you're a founder, a creative, or someone who just wants to understand what's happening — we meet you where you are.</p>
+            </div>
+            <div class="p3-col-divider"></div>
+            <div class="p3-col">
+                <div class="p3-col-number">02</div>
+                <h3>Breakthroughs, Achieved</h3>
+                <p>High-agency people don't wait for permission. They see the world as malleable and themselves as capable of reshaping it. We provide the mental models, the strategies, and the community to help you break through every invisible ceiling holding you back.</p>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="p3-quote">
+            <div class="p3-quote-content">
+                <blockquote>
+                    "Simplicity is the ultimate sophistication."
+                </blockquote>
+                <cite>— Leonardo da Vinci</cite>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="p3-how">
+            <div class="p3-how-header">
+                <p class="section-label">THE APPROACH</p>
+                <h2>Simple process.<br>Extraordinary results.</h2>
+            </div>
+            <div class="p3-how-steps">
+                <div class="p3-step">
+                    <div class="p3-step-line"></div>
+                    <div class="p3-step-dot"></div>
+                    <div class="p3-step-content">
+                        <h4>Understand</h4>
+                        <p>Start with our curated AI foundations. No jargon. No overwhelm. Just the essential knowledge that changes everything.</p>
+                    </div>
+                </div>
+                <div class="p3-step">
+                    <div class="p3-step-line"></div>
+                    <div class="p3-step-dot"></div>
+                    <div class="p3-step-content">
+                        <h4>Apply</h4>
+                        <p>Put breakthrough frameworks into practice. Real scenarios. Real results. Watch AI transform from abstract concept to daily advantage.</p>
+                    </div>
+                </div>
+                <div class="p3-step">
+                    <div class="p3-step-line"></div>
+                    <div class="p3-step-dot"></div>
+                    <div class="p3-step-content">
+                        <h4>Transcend</h4>
+                        <p>Join a community of high-agency thinkers. Share breakthroughs. Compound growth. Become the person who bends reality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="p3-testimonials">
+            <p class="section-label">WHAT PEOPLE SAY</p>
+            <div class="p3-test-grid">
+                <div class="p3-test-card">
+                    <blockquote>"Limitless stripped away every excuse I had about AI being too complex. Within a week, I was automating half my workflow."</blockquote>
+                    <cite>— Elena Voss, Product Designer</cite>
+                </div>
+                <div class="p3-test-card">
+                    <blockquote>"The breakthrough thinking framework changed how I approach every problem. It's not just about AI — it's about becoming a different kind of person."</blockquote>
+                    <cite>— David Kim, Venture Partner</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="p3-final-cta">
+            <div class="p3-final-content">
+                <h2>Ready to become<br><span class="p3-serif">limitless</span>?</h2>
+                <p>AI made simple. Life made extraordinary. Your breakthrough is waiting.</p>
+                <a href="#" class="p3-btn-solid">Start Now →</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p3-footer">
+            <div class="p3-footer-inner">
+                <span class="p3-logo">Limitless</span>
+                <div class="p3-footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
