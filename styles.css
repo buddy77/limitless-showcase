@@ -1375,33 +1375,370 @@ img { max-width: 100%; }
 
 
 /* ============================
+   PAGE 1: NEW SECTIONS
+   ============================ */
+
+/* Urgency Stats */
+.p1-urgency-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+.p1-urgency-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.p1-urgency-stat strong {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6C63FF;
+}
+#page1 .p1-urgency-stat strong {
+    color: #6C63FF;
+}
+.p1-urgency-stat span {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* Feature Lists */
+.p1-feature-list {
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.p1-feature-list li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    padding-left: 16px;
+    position: relative;
+}
+.p1-feature-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #6C63FF;
+    font-size: 12px;
+}
+
+/* How It Works */
+.p1-how-it-works {
+    padding: 96px 48px;
+    background: #fff;
+    color: #0a0a0f;
+}
+.p1-how-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.p1-how-inner h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 48px;
+}
+.p1-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+.p1-step {
+    padding: 0;
+}
+.p1-step-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6C63FF;
+    margin-bottom: 12px;
+}
+.p1-step h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.p1-step p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #777;
+}
+
+/* Test Grid - Page 1 */
+.p1-test-label {
+    text-align: center;
+    margin-bottom: 36px;
+}
+.p1-test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.p1-test-card-new {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 32px;
+}
+.p1-test-card-new .p1-quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #6C63FF;
+    line-height: 0.8;
+    margin-bottom: 12px;
+}
+.p1-test-card-new blockquote {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Budget Section - Page 1 */
+.p1-budget {
+    padding: 96px 48px;
+    background: #0a0a0f;
+    color: #fff;
+}
+.p1-budget-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+.p1-budget-left h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.p1-budget-left > p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+}
+.p1-budget-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+}
+.p1-cta-sub, .p2-cta-sub, .p3-cta-sub {
+    font-size: 14px !important;
+    color: rgba(255,255,255,0.35) !important;
+    margin-top: 16px !important;
+    margin-bottom: 0 !important;
+}
+
+/* ============================
+   PAGE 2: NEW SECTIONS
+   ============================ */
+
+/* Hero Trust */
+.p2-hero-trust {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    flex-wrap: wrap;
+}
+.p2-trust-dot { color: rgba(255,255,255,0.15); }
+
+/* Pillar Details */
+.p2-pillar-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+.p2-pillar-detail span {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(108, 99, 255, 0.2);
+    color: rgba(108, 99, 255, 0.7);
+}
+
+/* Budget - Page 2 */
+.p2-budget {
+    padding: 96px 48px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+.p2-budget-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+.p2-budget-text h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.p2-budget-sub {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.4);
+}
+.p2-budget-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.p2-budget-feat {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    padding-left: 24px;
+    position: relative;
+}
+.p2-budget-feat::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #6C63FF;
+    font-size: 13px;
+}
+
+/* ============================
+   PAGE 3: NEW SECTIONS
+   ============================ */
+
+/* Journey Section */
+.p3-journey-section {
+    padding: 80px 48px;
+    background: #f0f0ec;
+}
+.p3-journey-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+}
+.p3-journey-left h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.p3-journey-right > p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #666;
+    margin-bottom: 32px;
+}
+.p3-journey-points {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.p3-journey-point {
+    padding-left: 20px;
+    border-left: 2px solid #1a1a1a;
+}
+.p3-journey-point h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.p3-journey-point p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #888;
+}
+
+/* Budget Section - Page 3 */
+.p3-budget-section {
+    padding: 80px 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.p3-budget-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+.p3-budget-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.p3-budget-item {
+    padding: 16px 20px;
+    border: 1px solid #e0e0dc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+}
+.p3-final-content .p3-cta-sub {
+    color: rgba(255,255,255,0.35) !important;
+}
+
+/* ============================
    RESPONSIVE
    ============================ */
 @media (max-width: 900px) {
     .cards-grid { grid-template-columns: 1fr; }
     .p1-problem-grid { grid-template-columns: 1fr; gap: 48px; }
     .p1-features-grid { grid-template-columns: 1fr; }
+    .p1-steps-grid { grid-template-columns: repeat(2, 1fr); }
+    .p1-test-grid { grid-template-columns: 1fr; }
+    .p1-budget-inner { grid-template-columns: 1fr; gap: 40px; }
+    .p1-urgency-stats { flex-direction: column; gap: 16px; }
     .p2-hero { flex-direction: column; text-align: center; }
     .p2-hero-sub { margin-left: auto; margin-right: auto; }
     .p2-hero-ctas { justify-content: center; }
+    .p2-hero-trust { justify-content: center; }
     .p2-hero-visual { width: 250px; height: 250px; margin-top: 40px; }
     .p2-pillars-grid { grid-template-columns: 1fr; }
     .p2-stats-grid { grid-template-columns: repeat(2, 1fr); }
     .p2-testimonials-grid { grid-template-columns: 1fr; }
+    .p2-budget-inner { grid-template-columns: 1fr; gap: 40px; }
     .p3-hero-content { grid-template-columns: 1fr; gap: 32px; }
     .p3-belief-content { grid-template-columns: 1fr; gap: 16px; }
     .p3-columns { grid-template-columns: 1fr; }
     .p3-col-divider { width: 100%; height: 1px; }
     .p3-test-grid { grid-template-columns: 1fr; }
+    .p3-journey-inner { grid-template-columns: 1fr; gap: 32px; }
+    .p3-budget-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
     .dir-nav, .dir-content { padding-left: 24px; padding-right: 24px; }
     .p1-nav, .p1-hero, .p1-logos, .p1-problem, .p1-features, .p1-testimonial,
-    .p1-final-cta, .p1-footer { padding-left: 24px; padding-right: 24px; }
+    .p1-final-cta, .p1-footer, .p1-how-it-works, .p1-budget { padding-left: 24px; padding-right: 24px; }
     .p2-nav, .p2-hero, .p2-manifesto, .p2-pillars, .p2-stats,
-    .p2-testimonials, .p2-final-cta, .p2-footer { padding-left: 24px; padding-right: 24px; }
+    .p2-testimonials, .p2-final-cta, .p2-footer, .p2-budget { padding-left: 24px; padding-right: 24px; }
     .p3-nav, .p3-hero, .p3-belief, .p3-columns, .p3-quote, .p3-how,
-    .p3-testimonials, .p3-final-cta, .p3-footer { padding-left: 24px; padding-right: 24px; }
+    .p3-testimonials, .p3-final-cta, .p3-footer, .p3-journey-section,
+    .p3-budget-section { padding-left: 24px; padding-right: 24px; }
     .p1-nav-links, .p2-nav-links, .p3-nav-links { display: none; }
     .p1-hero { padding-top: 60px; padding-bottom: 60px; }
+    .p1-steps-grid { grid-template-columns: 1fr; }
+    .p3-budget-grid { grid-template-columns: 1fr; }
 }

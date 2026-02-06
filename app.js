@@ -19,9 +19,15 @@ const observer = new IntersectionObserver((entries) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll(
-        '.p1-feature-card, .p1-problem-left, .p1-problem-right, .p1-testimonial-inner, .p1-cta-content,' +
+        // Page 1
+        '.p1-feature-card, .p1-problem-left, .p1-problem-right, .p1-cta-content,' +
+        '.p1-step, .p1-test-card-new, .p1-budget-inner,' +
+        // Page 2
         '.p2-pillar, .p2-stat, .p2-test-card, .p2-manifesto-content,' +
-        '.p3-col, .p3-step, .p3-test-card, .p3-belief-right'
+        '.p2-budget-feat, .p2-budget-text,' +
+        // Page 3
+        '.p3-col, .p3-step, .p3-test-card, .p3-belief-right,' +
+        '.p3-journey-point, .p3-budget-item'
     ).forEach(el => {
         el.classList.add('animate-on-scroll');
         observer.observe(el);
